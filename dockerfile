@@ -1,4 +1,4 @@
-FROM ubuntu:22.04
+FROM ubuntu
 
 RUN apt-get update && apt-get install -y openssh-server net-tools
 RUN mkdir /var/run/sshd
