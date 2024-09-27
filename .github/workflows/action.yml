@@ -22,7 +22,8 @@ jobs:
         id: meta
         uses: docker/metadata-action@v4
         with:
-          images: ${{ vars.DOCKERHUB_USERNAME }}/ubuntu-ssh
+          images: |
+            jwpark/ubuntu-ssh
           tags: |
             type=schedule,pattern={{date 'YYYYMMDD-hhmmss' tz='Asia/Seoul'}}
 
